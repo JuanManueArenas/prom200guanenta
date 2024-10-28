@@ -3,21 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zapateria</title>
-</head>
-<body>
-    <h1>PROM 200 AÑOS</h1>
-    <?php
-    ?>
-    <div id="div_inicio_sesion">
-        <form  action="modelo/loguear.php" method="post">
-            <input type="text" name="usuario" id="" placeholder = "Usuario" require>
-            <br>
-            <input type = "password" name="clave" id="" placeholder = "Contraseña" require>
-            <br>
-            <button type = "submit">Ingresar</button>
-        </form> 
-        <style>
+    <title>Zapatería</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -25,61 +13,90 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color:#FFFFFF;
-            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #e2e2e2, #ffffff);
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            padding: 20px;
         }
 
         h1 {
-            margin-bottom: 20px;
-            color: #0000ff ;
+            margin-bottom: 30px;
+            color: #0056b3;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
 
         #div_inicio_sesion {
-            background: #FFFF00;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
         }
 
         input[type="text"], input[type="password"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 5px;
-            transition: border 0.3s;
+            transition: border 0.3s, box-shadow 0.3s;
+            font-size: 1em;
         }
 
         input[type="text"]:focus, input[type="password"]:focus {
-            border: 1px solid #0000ff ;
-            outline: #FFFFFF;
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+            outline: none;
         }
 
         button {
             width: 100%;
-            padding: 10px;
-            background-color: #0000ff ;
+            padding: 12px;
+            background-color: #0056b3;
             color: white;
-            border: white;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: 1em;
         }
 
         button:hover {
-            background-color: #0000ff ;
+            background-color: #004494;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            #div_inicio_sesion {
+                width: 90%;
+            }
         }
     </style>
- 
-    
-</style>
+</head>
+<body>
+    <h1>PROM 200 AÑOS</h1>
+    <div id="div_inicio_sesion">
+        <form action="pagina_principal.php" method="post">
+            <input type="text" name="usuario" placeholder="Usuario" required>
+            <input type="password" name="clave" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form> 
     </div>
 </body>
 </html>
