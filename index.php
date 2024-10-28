@@ -95,7 +95,8 @@
         <form action="pagina_principal.php" method="post">
             <input type="text" name="usuario" placeholder="Usuario" required>
             <input type="password" name="clave" placeholder="Contraseña" required>
-            <button type="submit">Ingresar</button>
+            <button href="pagina_principal.php" >Ingresar</button>
+            
         </form> 
     </div>
 </body>

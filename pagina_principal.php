@@ -11,10 +11,10 @@
         <h1>Promocion de los 200 años</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="pagina_principal.php">Inicio</a></li>
+                <li><a href="estudestacados.php">Estudiamtes destacados</a></li>
+                <li><a href="grados11.php">Grados 11</a></li>
+                <li><a href="contactos.php">Contacto</a></li>
             </ul>
         </nav>
     </header>
